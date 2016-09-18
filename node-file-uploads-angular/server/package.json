@@ -1,0 +1,26 @@
+{
+  "name": "node-file-uploads-angular",
+  "version": "1.0.0",
+  "description": "Simple node file upload with angular",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/kevinccbsg/node-examples.git"
+  },
+  "keywords": [
+    "node",
+    "file",
+    "uploads",
+    "angular"
+  ],
+  "author": "Kevin Julian Martinez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "multer": "^1.2.0"
+  }
+}
