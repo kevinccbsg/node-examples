@@ -20,7 +20,7 @@ let storage = multer.diskStorage({
 	},
 	filename: (req, file, callback) => {
 		let datetimestamp = Date.now();
-		callback(null, file.filename + '-' 
+		callback(null, file.fieldname + '-' 
 			+ datetimestamp + '.' 
 			+ file.originalname.split('.')[file.originalname.split('.').length -1]);
 	}
