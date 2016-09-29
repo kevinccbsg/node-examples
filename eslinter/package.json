@@ -1,0 +1,21 @@
+{
+  "name": "eslinter",
+  "version": "1.0.0",
+  "description": "testing eslinter to implement on future projects",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint *.js"
+  },
+  "keywords": [
+    "node",
+    "eslint",
+    "javascript",
+    "linter",
+    "npm"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.6.1"
+  }
+}
