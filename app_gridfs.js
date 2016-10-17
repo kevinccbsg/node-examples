@@ -65,6 +65,75 @@ app.post('/upload', function(req, res, next) {
 	/*
 	*/
 });
+app.get('/api/1.0/upload', function (req, res, next) {
+    var gfs = Grid(conn.db);
+    var filename = req.query.filename;
+  var lifnr = req.query.lifnr;
+  var system = req.query.system;
+  var subsystem = req.query.subsystem;
+  var jsonSearch = {
+    filename: filename,
+    metadata: {
+      lifnr: lifnr,
+      system: system,
+      subsystem: subsystem
+    }
+  };
+    gfs.files.findOne(jsonSearch, function (err, file) {
+        if (err) {
+          res.json(err);
+        }
+        else {
+          if (file) {
+            res.set('Content-Type', file.contentType);
+            res.set('Content-Length', file.length);
+            res.set('Content-Disposition', 'inline; filename="' + file.filename + '"');
+            var read_stream = gfs.createReadStream({ filename: file.filename });
+            read_stream.pipe(res);
+          }
+          else {
+            res.json('File Not Found');
+          }
+        }
+      });
+});
+/*conn.once('open', function () {
+    console.log('open');
+    var gfs = Grid(conn.db);
+ 
+    // streaming to gridfs
+    //filename to store in mongodb
+    var writestream = gfs.createWriteStream({
+        filename: 'prueba.txt'
+    });
+    fs.createReadStream('./prueba.txt').pipe(writestream);
+ 
+    writestream.on('close', function (file) {
+        // do something with `file`
+        console.log(file.filename + 'Written To DB');
+    });
+});*/
+app.listen(3000, () => {
+	console.log('listen');
+})
+
+		var writestream = gfs.createWriteStream({
+			filename: filename,
+            content_type: type,
+            metadata: {
+                lifnr: lifnr,
+                system: system,
+                subsystem: subsystem
+            }
+		});
+		read_stream.pipe(writestream);
+        res.json({ filename: filename });
+		console.log(files.files.name);
+		next();
+    });
+	/*
+	*/
+});
 app.get('/uploads', function (req, res, next) {
     var gfs = Grid(conn.db);
     var filename = req.query.filename;
