@@ -1,0 +1,22 @@
+{
+  "name": "projectionmongoosetest",
+  "version": "1.0.0",
+  "description": "Test projections aggreate etc with mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "node",
+    "mongodb",
+    "projections",
+    "aggregations",
+    "filter"
+  ],
+  "author": "Kevin Martinez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.6.5"
+  }
+}
