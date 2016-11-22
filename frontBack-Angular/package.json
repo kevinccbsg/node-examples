@@ -1,0 +1,40 @@
+{
+  "name": "frontback-angular",
+  "version": "1.0.0",
+  "description": "scaffolding de una app mean",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gulp develop & node app.js"
+  },
+  "keywords": [
+    "angular",
+    "mean",
+    "node",
+    "express"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
+    "browserify": "^13.1.1",
+    "cssnano": "^3.8.0",
+    "gulp": "^3.9.1",
+    "gulp-buffer": "0.0.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-tap": "^0.1.3",
+    "gulp-uglify": "^2.0.0"
+  }
+}
