@@ -1,0 +1,15 @@
+{
+  "name": "cli-applications",
+  "version": "1.0.0",
+  "description": "Cli basic test",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [
+    "cli",
+    "node",
+    "app",
+    "npm"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC"
+}
