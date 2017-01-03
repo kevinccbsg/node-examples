@@ -1,11 +1,11 @@
 'use strict'
 var express = require('express');
-var path = require('path');
+//var path = require('path');
 var app = express();
 
 
-app.use('/', express.static(path.join(__dirname, 'public')))
-app.set('view engine', 'pug');
+/*app.use('/', express.static(path.join(__dirname, 'public')))
+app.set('view engine', 'pug');*/
 
 app.get('/', function (req, res) {
   console.log('ey');
