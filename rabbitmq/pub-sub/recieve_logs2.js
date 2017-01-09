@@ -9,6 +9,7 @@ amqp.connect('amqp://localhost', function(err, conn) {
     ch.assertExchange(ex, 'fanout', {durable: false});
 
     ch.assertQueue('test2', {exclusive: true}, function(err, q) {
+      console.log(q);
       console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", q.queue);
       ch.bindQueue(q.queue, ex, 'test2');
 
