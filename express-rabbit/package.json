@@ -1,0 +1,24 @@
+{
+  "name": "express-rabbit",
+  "version": "1.0.0",
+  "description": "Testo of rabbitmq and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rabbitmq",
+    "express",
+    "logs",
+    "pub",
+    "sub"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0"
+  }
+}
