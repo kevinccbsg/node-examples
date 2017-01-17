@@ -6,7 +6,6 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var app = express();
 var MongoStore = require('connect-mongo')(session);
-
 mongoose.connect('mongodb://localhost:27017/video');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
