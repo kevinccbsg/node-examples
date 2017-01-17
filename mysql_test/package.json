@@ -1,0 +1,20 @@
+{
+  "name": "mysql_test",
+  "version": "1.0.0",
+  "description": "Test del master de node con mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "node",
+    "example",
+    "npm"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.12.0"
+  }
+}
