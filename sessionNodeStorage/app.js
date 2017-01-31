@@ -37,6 +37,8 @@ app.get('/', function(req, res, next) {
 })
 
 app.get('/test', (req, res, next) => {
+  console.log(req.query)
+  console.log(req.query.nombre);
   var sess = req.session
   console.log(sess);
   if (sess.views === undefined) {
