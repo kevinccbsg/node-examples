@@ -1,0 +1,21 @@
+{
+  "name": "test-routes-statics",
+  "version": "1.0.0",
+  "description": "test static routes with different renders",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "static",
+    "express"
+  ],
+  "author": "Kevin Julián Martínez Escobar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
+  }
+}
