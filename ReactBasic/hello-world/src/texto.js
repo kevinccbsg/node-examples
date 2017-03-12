@@ -1,4 +1,4 @@
-import { Component } from React;
+import { Component } from 'react';
 
 class Texto extends Component {
   render () {
@@ -8,4 +8,4 @@ class Texto extends Component {
   }
 }
 
-export default Par;
+export default Texto;
